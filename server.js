@@ -1,7 +1,4 @@
 var express = require('express'),
-    util = require("util"),
-    io = require("socket.io"),
-    Player = require("./Player").Player,
     server = express();
 
 server.use('/cocos2d', express.static(__dirname + '/cocos2d') );
