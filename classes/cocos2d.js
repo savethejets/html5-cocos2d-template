@@ -44,6 +44,8 @@ cc.loadjs = function (filename) {
             };
             //preload ressources
             cc.Loader.shareLoader().preload([
+                {type:"tmx", src:"/resources/level1.tmx"},
+                {type:"image", src:"/resources/tile_set.png"}
 //                {type:"bgm", src:"resources/background"},
 //                {type:"effect", src:"resources/effect2"}
             ]);
@@ -61,8 +63,11 @@ cc.loadjs = function (filename) {
 // The shell files and Closure Compiler which Ant needs are provided in tools folder and cocos2d folder.
 cc.loadjs('cocos2d/platform/CCClass.js');//0
 cc.loadjs('cocos2d/platform/CCCommon.js');//1
-cc.loadjs('cocos2d/platform/platform.js');//2
 cc.loadjs('cocos2d/cocoa/CCGeometry.js');//3
+cc.loadjs('cocos2d/platform/ZipUtils.js');//1
+cc.loadjs('cocos2d/platform/base64.js');//1
+cc.loadjs('cocos2d/platform/gzip.js');//1
+cc.loadjs('cocos2d/platform/platform.js');//2
 cc.loadjs('cocos2d/cocoa/CCSet.js');//4
 cc.loadjs('cocos2d/platform/CCTypes.js');//5
 cc.loadjs('cocos2d/cocoa/CCAffineTransform.js');//5
@@ -96,6 +101,15 @@ cc.loadjs('cocos2d/platform/CCSAXParser.js');//16
 cc.loadjs('cocos2d/platform/AppControl.js');//18
 cc.loadjs('cocos2d/menu_nodes/CCMenuItem.js');
 cc.loadjs('cocos2d/menu_nodes/CCMenu.js');
+cc.loadjs('cocos2d/misc_nodes/CCRenderTexture.js');
+cc.loadjs('cocos2d/textures/CCTextureAtlas.js');
+cc.loadjs('cocos2d/sprite_nodes/CCSpriteBatchNode.js');
+//cc.loadjs('cocos2d/tileMap_parallax_nodes/CCTileMapAtlas.js');
+cc.loadjs('cocos2d/tileMap_parallax_nodes/CCTMXTiledMap.js');
+cc.loadjs('cocos2d/tileMap_parallax_nodes/CCTMXXMLParser.js');
+cc.loadjs('cocos2d/tileMap_parallax_nodes/CCTMXObjectGroup.js');
+cc.loadjs('cocos2d/tileMap_parallax_nodes/CCTMXLayer.js');
+cc.loadjs('cocos2d/tileMap_parallax_nodes/CCParallaxNode.js');
 cc.loadjs('cocosDenshion/SimpleAudioEngine.js');
 
 // User files
