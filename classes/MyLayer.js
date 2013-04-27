@@ -17,7 +17,7 @@ var MyLayer = cc.LayerColor.extend({
         this.addChild(this.tileMap);
 
         this._isKeypadEnabled = true;
-        player = new Player();
+        player = new PlatformPlayer();
         player.init();
         player.id = Math.random();
         player.desiredPosition = cc.ccp(cc.sharedDirector._winSizeInPixels.width/2,cc.sharedDirector._winSizeInPixels.height/2);

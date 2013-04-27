@@ -114,6 +114,6 @@ cc.loadjs('cocosDenshion/SimpleAudioEngine.js');
 
 // User files
 cc.loadjs('classes/AppDelegate.js');//17
-cc.loadjs('classes/Player.js');//19
+cc.loadjs('classes/PlatformPlayer.js');//19
 cc.loadjs('classes/Ghosts.js');//19
 cc.loadjs('classes/MyLayer.js');//19

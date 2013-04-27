@@ -1,5 +1,5 @@
 //noinspection JSValidateTypes
-var Player = cc.Node.extend({
+var PlatformPlayer = cc.Node.extend({
     id:null,
     sprite:null,
     speed:220,
@@ -45,8 +45,8 @@ var Player = cc.Node.extend({
             this.velocity = cc.ccpAdd(this.velocity, forwardStep);
         }
 
-        var minMovement = cc.ccp(-250, -450);
-        var maxMovement = cc.ccp(250, 350);
+        var minMovement = cc.ccp(-850, -450);
+        var maxMovement = cc.ccp(850, 350);
 
         this.velocity = cc.ccpClamp(this.velocity, minMovement, maxMovement);
 
